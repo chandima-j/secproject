@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  namespace: fresh-bonds
+data:
+  POSTGRES_DB: fresh_bonds
+  POSTGRES_USER: postgres
