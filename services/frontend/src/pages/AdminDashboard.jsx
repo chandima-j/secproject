@@ -14,7 +14,7 @@ const AdminDashboard = () => {
     totalValue: 0
   });
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
+  const API_URL = import.meta.env.VITE_API_URL || 'http://api-gateway:8080/api';
 
   useEffect(() => {
     loadProducts();

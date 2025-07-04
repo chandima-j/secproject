@@ -18,8 +18,8 @@ app.use(morgan('combined'));
 app.use(express.json());
 
 // Service URLs
-const USER_SERVICE_URL = process.env.USER_SERVICE_URL || 'http://localhost:3001';
-const PRODUCT_SERVICE_URL = process.env.PRODUCT_SERVICE_URL || 'http://localhost:3002';
+const USER_SERVICE_URL = process.env.USER_SERVICE_URL || 'http://user-service:3001';
+const PRODUCT_SERVICE_URL = process.env.PRODUCT_SERVICE_URL || 'http://product-service:3002';
 
 console.log('🔗 Service URLs:');
 console.log('📡 User Service:', USER_SERVICE_URL);

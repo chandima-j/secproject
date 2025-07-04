@@ -10,7 +10,7 @@ const HomePage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [viewMode, setViewMode] = useState('grid');
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
+  const API_URL = import.meta.env.VITE_API_URL || 'http://api-gateway:8080/api';
 
   useEffect(() => {
     loadProducts();
