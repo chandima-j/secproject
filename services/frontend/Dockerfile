@@ -15,7 +15,7 @@ RUN npm run build
 # Remove dev dependencies to slim down the final image (optional)
 RUN npm prune --production
 
-FROM nginx:alpine
+FROM nginx:1.29.3-alpine3.22
 
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
